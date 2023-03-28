@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
 
     //rigidbody of player
     private Rigidbody rb;
-    private Vector2 inputAxis;
+
+    // 
+    private Vector3 inputAxis;
 
 
     //[SerializeField] private float 
@@ -37,21 +39,12 @@ public class PlayerMovement : MonoBehaviour
         inputAxis.x = Input.GetAxisRaw("Horizontal");
         inputAxis.y = Input.GetAxisRaw("Vertical");
     }
-    private void run()
+    ./*private void run()
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
 
         }
     }
-
-    private void jump()
-    {
-
-    }
-
-    private void isGrounded()
-    {
-
-    }
+    */
 }
